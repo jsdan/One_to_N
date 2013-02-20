@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">One_to_N</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="main_enter">請輸入正整數</string>
+    <string name="main_btn_submit">計算</string>
+    <string name="main_input_hint">例如:10</string>
+    <string name="result">答案為:</string>
+
+</resources>
