@@ -27,6 +27,7 @@
 
     <Button
         android:id="@+id/submit"
+        android:onClick="count_total"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/main_btn_submit" />

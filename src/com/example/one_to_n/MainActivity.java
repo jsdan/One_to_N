@@ -16,7 +16,15 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		findViews();
-		setListeners();
+		//setListeners();
+	}
+
+	public void count_total(View v) {
+
+		int number = Integer.parseInt(field_input.getText().toString());
+		result.setText(getText(R.string.result) + "" + (number * (number + 1))
+				/ 2);
+
 	}
 
 	private Button calcbutton;
@@ -30,25 +38,25 @@ public class MainActivity extends Activity {
 
 	}
 
-	private void setListeners() {
-		calcbutton.setOnClickListener(count);
-	}
-
-	private Button.OnClickListener count = new OnClickListener() {
-
-		@Override
-		public void onClick(View v) {
-			int number = Integer.parseInt(field_input.getText().toString());
-			/*
-			 * int tmp = 0; for (int i = 1; i <= number; i++) { tmp += i; } //
-			 * result.setText(getText(R.string.result)+String.valueOf(tmp));
-			 * result.setText(getText(R.string.result) + "" + tmp);
-			 */
-
-			result.setText(getText(R.string.result) + ""
-					+ (number * (number + 1)) / 2);
-		}
-	};
+//	private void setListeners() {
+//		calcbutton.setOnClickListener(count);
+//	}
+//
+//	private Button.OnClickListener count = new OnClickListener() {
+//
+//		@Override
+//		public void onClick(View v) {
+//			int number = Integer.parseInt(field_input.getText().toString());
+//			/*
+//			 * int tmp = 0; for (int i = 1; i <= number; i++) { tmp += i; } //
+//			 * result.setText(getText(R.string.result)+String.valueOf(tmp));
+//			 * result.setText(getText(R.string.result) + "" + tmp);
+//			 */
+//
+//			result.setText(getText(R.string.result) + ""
+//					+ (number * (number + 1)) / 2);
+//		}
+//	};
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
